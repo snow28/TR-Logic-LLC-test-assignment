@@ -1,0 +1,80 @@
+
+.body
+  padding-top: 40px
+
+.main , .footer
+  max-width: 1024px
+  width: 100%
+  margin: auto
+
+.header
+  max-width: 1024px
+  width: 100%
+  left: 50%
+  transform: translate(-50%)
+  background-color: lightgray
+  height: 40px
+  position: fixed
+  top: 0px
+  text-align: center
+  line-height: 40px
+
+
+
+.main
+  background-color: bisque
+  min-height: 140vh
+  padding-top: 10px
+  &__description
+    height: 100px
+    display: block
+    background-color: darkgray
+    width: 95%
+    margin: auto
+  &__fluid-elem
+    float: right
+    height: 80vh
+    width: 200px
+    margin-right: 2.5%
+    background-color: aquamarine
+    min-height: 40vh
+    top: 15px
+
+.fixed
+  position: fixed
+  top: 40px
+
+.aside
+  transition-duration: 3s
+  z-index: -1
+  display: block
+  width: 300px
+  min-height: 98vh
+  position: fixed
+  &-left
+    right: 50%
+    transform: translate(-512px)
+    top: 40px
+    background-color: forestgreen
+    &-active
+      transform: translate(-212px)
+  &-right
+    left: 50%
+    transform: translate(512px)
+    top: 40px
+    background-color: forestgreen
+    &-active
+      transform: translate(212px)
+
+
+
+
+
+.footer
+  background-color: salmon
+  height: 30px
+
+
+
+
+
