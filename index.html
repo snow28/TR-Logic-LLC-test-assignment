@@ -10,20 +10,19 @@
     </head>
     <body class="body">
         <header class="header">
-            <button class="header__button-left header__button header__b-left-js">Left menu</button>
-            <button class="header__button-right header__button header__b-right-js">Right menu</button>
+            <button onclick="moveLeft()" class="header__button-left  header__b-left-js">Left menu</button>
+            <button onclick="moveRight()" class="header__button-right header__b-right-js">Right menu</button>
         </header>
         <main class="main">
             <div class="main__description"></div>
             <div class="main__fluid-elem"></div>
+            <aside id="aside-left" class="aside-left aside"></aside>
+            <aside id="aside-right" class="aside-right aside"></aside>
         </main>
-        <aside class="aside-left aside"></aside>
-        <aside class="aside-right aside"></aside>
         <footer class="footer"></footer>
 
 
         <script src="js/jquery-3.3.1.min.js"></script>
-        <script  src="js/jquery.sticky.js"></script>
         <script src="js/custom.js"></script>
     </body>
 </html>
