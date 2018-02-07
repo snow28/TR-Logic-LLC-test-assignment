@@ -1,17 +1,4 @@
-function moveLeft(){
-    //document.getElementsByClassName('aside-left').addClass('aside-left-active');
-
-    var element = document.getElementById("aside-left");
-    element.classList.add("aside-left-active");
-}
-
-function moveRight(){
-    var element2 = document.getElementById("aside-right");
-    element2.classList.add("aside-right-active");
-}
-
 $(document).ready(function(){
-    //document.getElementsByClassName('header__b-left-js').
 
     //   always visible div JS
     var navOffsetY = $('.main__fluid-elem').offset().top;
@@ -27,12 +14,13 @@ $(document).ready(function(){
         }
     })
 
-   /*$('.header__b-left-js').on('click', function(){
+    //aside menu functionality
+    $('.header__b-left-js').on('tap', function(){
         $('.aside-left').toggleClass('aside-left-active');
     });
-    $('.header__b-right-js').on('click', function(){
+    $('.header__b-right-js').on('tap', function(){
         $('.aside-right').toggleClass('aside-right-active');
-    });*/
+    });
 
 
 });
