@@ -6,9 +6,9 @@ $(document).ready(function(){
 
     $(window).scroll(function () {
         var scrollPosTop = $(window).scrollTop();
+        $('.main__fluid-elem').css('left', navOffsetX);
         if(scrollPosTop >= navOffsetY-40){
             $('.main__fluid-elem').addClass('fixed');
-            $('.main__fluid-elem').css('left', navOffsetX);
         }else{
             $('.main__fluid-elem').removeClass('fixed');
         }
